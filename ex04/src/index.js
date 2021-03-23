@@ -25,5 +25,5 @@ console.log(dog.bark());
 
 module.exports = {
   Pets,
-  Dog,
+  Dog
 };
