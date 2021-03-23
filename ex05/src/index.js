@@ -1,6 +1,6 @@
 class Microsoft {
   constructor(name) {
-    this.name = name;
+    this._name = name;
   }
   get name() {
     return this._name;
@@ -9,17 +9,17 @@ class Microsoft {
     this._name = newName;
   }
   occupation() {
-    return `${this.name} is a philanthropist!`;
+    return `${this._name} is a philanthropist!`;
   }
 }
 
 class Facebook extends Microsoft {
   constructor(name, age) {
     super(name);
-    this.age = age;
+    this._age = age;
   }
   studentAge() {
-    return `${this.name} is ${this.age}`;
+    return `${this._name} is ${this._age}`;
   }
 }
 let henry = new Microsoft("William Henry Gates III");
